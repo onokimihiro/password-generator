@@ -11,14 +11,14 @@ module.exports = {
   entry: './src/index.ts',
 
   output: {
-    path: `${__dirname}/dist`,
+    path: `${__dirname}/docs`,
     filename: 'main.js',
   },
 
   // 開発サーバーの設定
   // ファイルが変更されたら自動的にブラウザを更新する
   devServer: {
-    static: './dist',
+    static: './docs',
     open: true,
   },
 
@@ -83,7 +83,7 @@ module.exports = {
     // CSSファイルを外だしにするプラグイン
     new MiniCssExtractPlugin({
       // ファイル名を設定します
-      filename: '../dist/style.css',
+      filename: '../docs/style.css',
     }),
 
     new HtmlWebpackPlugin({
