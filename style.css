@@ -1,21 +1,57 @@
 @charset "utf-8";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
   background-color: #f5f5f5;
+  padding: 40px;
 }
 
 main {
   background-color: #fff;
-  width: 380px;
-  margin: 24px auto 0;
-  padding: 16px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
-p {
+.is-show {
+  display: flex;
+}
+
+.is-hidden {
+  display: none;
+}
+
+#password-type {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+  gap: 8px;
   margin: 0;
+}
+
+#password-type li {
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+}
+#password-type li.is-selected {
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  margin: 24px 0 0 0;
   border: 1px solid #cccccc;
   border-radius: 4px;
   font-family: 'Courier New';
@@ -32,7 +68,7 @@ button {
   border-radius: 8px;
   padding: 12px 0;
   text-align: center;
-  margin-top: 16px;
+  margin-top: 24px;
   cursor: pointer;
 }
 
@@ -44,17 +80,11 @@ button:active {
   opacity: 0.4;
 }
 
-fieldset {
-  border: 1px dashed #cccccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin-top: 16px;
-  display: flex;
-  justify-content: space-between;
-}
-
-legend {
-  padding: 0 8px;
+.password-type-options {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  justify-content: flex-start;
+  gap: 16px;
 }
 
 #password-length {
