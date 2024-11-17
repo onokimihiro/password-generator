@@ -46,6 +46,53 @@ export function passwordGenerator() {
       '800080',
       '808080',
     ];
+    const fonts = [
+      'Arial',
+      'TimesNewRoman',
+      'Verdana',
+      'Georgia',
+      'HiraginoKakuGothicProN',
+      'HiraginoMinchoProN',
+      'Meiryo',
+      'MSPGothic',
+      'MSMincho',
+      'NotoSansJP',
+      'NotoSerifJP',
+      'YuGothic',
+      'YuMincho',
+      'Helvetica',
+      'Geneva',
+      'Lucida',
+      'Palatino',
+      'Bookman',
+      'ComicSansMS',
+      'Impact',
+      'LucidaSansUnicode',
+      'Geneva',
+      'LucidaConsole',
+      'Monaco',
+      'LucidaTypewriter',
+      'BitstreamVeraSansMono',
+      'AndaleMono',
+      'CourierNew',
+      'Courier',
+      'FreeMono',
+      'NimbusMonoL',
+      'LucidaTypewriter',
+      'BitstreamVeraSansMono',
+      'AndaleMono',
+      'CourierNew',
+      'Courier',
+      'FreeMono',
+      'NimbusMonoL',
+      'LucidaTypewriter',
+      'BitstreamVeraSansMono',
+      'AndaleMono',
+      'CourierNew',
+      'Courier',
+      'FreeMono',
+      'NimbusMonoL',
+    ];
 
     let password = '';
     let passwordNumber = '';
@@ -87,12 +134,20 @@ export function passwordGenerator() {
   const slider1 = document.getElementById('slider1') as HTMLInputElement;
   const slider2 = document.getElementById('slider2') as HTMLInputElement;
   const generate = document.getElementById('generate')!;
-  const numbersCheckbox = document.getElementById('numbers')! as HTMLInputElement;
-  const symbolsCheckbox = document.getElementById('symbols')! as HTMLInputElement;
+  const numbersCheckbox = document.getElementById(
+    'numbers',
+  )! as HTMLInputElement;
+  const symbolsCheckbox = document.getElementById(
+    'symbols',
+  )! as HTMLInputElement;
   const passwordType1 = document.getElementById('password-type-1')!;
   const passwordType2 = document.getElementById('password-type-2')!;
-  const passwordTypeOptions1 = document.getElementById('password-type-options-1')!;
-  const passwordTypeOptions2 = document.getElementById('password-type-options-2')!;
+  const passwordTypeOptions1 = document.getElementById(
+    'password-type-options-1',
+  )!;
+  const passwordTypeOptions2 = document.getElementById(
+    'password-type-options-2',
+  )!;
 
   // イベントリスナーを設定
   if (passwordType1 && passwordType2) {
